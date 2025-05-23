@@ -4,21 +4,92 @@
     <meta charset="UTF-8">
     <title>Machine Knowledge Hub</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; color: #333; }
-        h1 { color: #F46E24; }
-        ul { line-height: 1.8; }
-        a { color: #007acc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #F46E24;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        li a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        .section-header {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #444;
+        }
     </style>
+    <script>
+        function searchDocs() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const items = document.querySelectorAll("ul li");
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(input) ? "block" : "none";
+            });
+        }
+    </script>
 </head>
 <body>
-    <h1>Machine Knowledge Hub</h1>
-    <p>Welcome! Choose a topic below:</p>
-    <ul>
-        <li><a href="jobs/job-a.html">Job A – Setup Example</a></li>
-        <li><a href="tooling/tool-offsets.html">Tooling – Tool Offsets</a></li>
-        <li><a href="forum/common-questions.html">Forum – Common Questions</a></li>
-        <li><a href="forum/operator-tips.html">Forum – Operator Tips</a></li>
-    </ul>
+    <header>
+        <h1>Machine Knowledge Hub</h1>
+        <p>Internal documentation system for operators & engineers</p>
+    </header>
+    <main>
+        <input type="text" id="searchInput" onkeyup="searchDocs()" placeholder="Search for topics, tooling, jobs...">
+
+        <div class="section-header">Job Setups</div>
+        <ul>
+            <li><a href="jobs/job-a.html">Job A – M6 Bolt Setup</a><br><small>Stainless steel, 12mm, chamfer + tap</small></li>
+        </ul>
+
+        <div class="section-header">Tooling</div>
+        <ul>
+            <li><a href="tooling/tool-offsets.html">Tool Offsets</a><br><small>Offset values for tool T01–T03</small></li>
+        </ul>
+
+        <div class="section-header">Operator Forum</div>
+        <ul>
+            <li><a href="forum/common-questions.html">Common Questions</a><br><small>Quick answers to everyday issues</small></li>
+            <li><a href="forum/operator-tips.html">Operator Tips</a><br><small>From the floor – real-world advice</small></li>
+        </ul>
+    </main>
 </body>
 </html>
