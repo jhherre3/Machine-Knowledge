@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Machine Knowledge Hub</title>
+    <title>AD22 Drill Machine – Knowledge Hub</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,26 +69,40 @@
 </head>
 <body>
     <header>
-        <h1>Machine Knowledge Hub</h1>
-        <p>Internal documentation system for operators & engineers</p>
+        <h1>AD22 Drill Machine – Knowledge Hub</h1>
+        <p>Essential information for operators and engineers</p>
     </header>
     <main>
         <input type="text" id="searchInput" onkeyup="searchDocs()" placeholder="Search for topics, tooling, jobs...">
 
+        <div class="section-header">Machine Overview</div>
+        <ul>
+            <li><a href="overview/specs.html">Specifications</a><br><small>Power, RPM range, spindle type, limits</small></li>
+            <li><a href="overview/controls.html">Control Panel Guide</a><br><small>Buttons, dials, and digital interface guide</small></li>
+        </ul>
+
         <div class="section-header">Job Setups</div>
         <ul>
-            <li><a href="jobs/job-a.html">Job A – M6 Bolt Setup</a><br><small>Stainless steel, 12mm, chamfer + tap</small></li>
+            <li><a href="jobs/setup-threading.html">Thread Drilling – M6 Aluminum</a><br><small>Feeds, speeds, coolant use, tool callouts</small></li>
+            <li><a href="jobs/setup-bore.html">Precision Boring – Ø10mm</a><br><small>Includes boring bar setup and alignment</small></li>
         </ul>
 
-        <div class="section-header">Tooling</div>
+        <div class="section-header">Tooling & Offsets</div>
         <ul>
-            <li><a href="tooling/tool-offsets.html">Tool Offsets</a><br><small>Offset values for tool T01–T03</small></li>
+            <li><a href="tooling/tool-list.html">Tool List</a><br><small>Current loaded tools and purposes</small></li>
+            <li><a href="tooling/offsets.html">Tool Offsets</a><br><small>Zeroing methods and reference offsets</small></li>
         </ul>
 
-        <div class="section-header">Operator Forum</div>
+        <div class="section-header">Maintenance</div>
         <ul>
-            <li><a href="forum/common-questions.html">Common Questions</a><br><small>Quick answers to everyday issues</small></li>
-            <li><a href="forum/operator-tips.html">Operator Tips</a><br><small>From the floor – real-world advice</small></li>
+            <li><a href="maintenance/daily-checklist.html">Daily Checklist</a><br><small>Checklist to be completed per shift</small></li>
+            <li><a href="maintenance/preventive.html">Preventive Maintenance Schedule</a><br><small>Monthly and quarterly routines</small></li>
+        </ul>
+
+        <div class="section-header">Troubleshooting & Forum</div>
+        <ul>
+            <li><a href="forum/common-errors.html">Common Error Codes</a><br><small>What they mean and how to resolve</small></li>
+            <li><a href="forum/operator-notes.html">Operator Notes</a><br><small>Tips, tricks, and problem logs</small></li>
         </ul>
     </main>
 </body>
