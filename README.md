@@ -14,7 +14,7 @@ It enables fast access to:
 - Maintenance procedures
 - Troubleshooting documentation
 
-Designed for on-the-floor usability with a searchable UI and modular folder system. This template currently supports the **AD22 Drill Machine**.
+Designed for on-the-floor usability with a searchable UI and modular folder system. This template currently supports the **Mill Machine**.
 
 ---
 
