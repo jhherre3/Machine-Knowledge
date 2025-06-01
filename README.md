@@ -1,6 +1,6 @@
 # TemplatePage – Machine Knowledge Hub
 
-**Live Site**: [https://jhherre3.github.io/TemplatePage/](https://jhherre3.github.io/TemplatePage/)
+**Live Site**: [https://jhherre3.github.io/TemplatePage/](https://jhherre3.github.io/Machine-Knowledge/)
 
 ---
 
